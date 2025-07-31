@@ -14,7 +14,7 @@
   <header>
     <h1>Wunderlust Travel</h1>
     <picture>
-    <img src="images/logo-S.png" alt="Wunderlust Travel Logo" style="max-width: 100%; height: auto;">
+    <img src="images/logo-S.png" alt="Wunderlust Travel Logo" style="width: 100%; height: auto;">
     </picture>
     <p>Let Wunderlust Travel help you plan the trip of your dreams!</p>
     <nav aria-label="Main Navigation">
@@ -36,11 +36,12 @@
       </p>
 
       <figure>
-        <picture>
-          <source media="(min-width: 1024px)" srcset="images/majorca-waves-L.png">
-          <source media="(min-width: 780px)" srcset="images/majorca-waves-M.png">
-          <img src="images/majorca-waves-S.png" alt="Waves on a beach in Majorca" style="max-width: 100%; height: auto;">
-        </picture>
+        <img 
+          src="images/majorca-waves-S.png" 
+          alt="Waves on a beach in Majorca"
+          srcset="images/majorca-waves-S.png 480w, images/majorca-waves-M.png 780w, images/majorca-waves-L.png 1024w"
+          sizes="(max-width: 600px) 90vw, (max-width: 1024px) 100vw, 1024px"
+          style="width: 100%; height: auto;">
         <figcaption>Waves in Majorca</figcaption>
       </figure>
      
