@@ -36,17 +36,11 @@
       </p>
 
       <figure>
-        <img 
-          src="images/majorca-waves-320.png" 
-          alt="Waves on a beach in Majorca"
-          srcset="
-            images/majorca-waves-320.png 320w,
-            images/majorca-waves-780.png 780w,
-            images/majorca-waves-1024.png 1024w"
-          sizes="(max-width: 320px) 100vw,
-                 (max-width: 780px) 100vw,
-                 1024px"
-          style="width: 100%; height: auto;">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="images/majorca-waves-L.png">
+          <source media="(min-width: 780px)" srcset="images/majorca-waves-M.png">
+          <img src="images/majorca-waves-S.png" alt="Waves on a beach in Majorca" style="width: 100%; height: auto;">
+        </picture>
         <figcaption>Waves in Majorca</figcaption>
       </figure>
      
